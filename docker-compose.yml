@@ -1,0 +1,7 @@
+services:
+  space-index:
+    image: ${IMAGE:?IMAGE environment variable is required}
+    container_name: space-index
+    ports:
+      - "80:80"
+    restart: unless-stopped
