@@ -65,8 +65,8 @@ jobs:
           port: ${{ secrets.DEPLOY_PORT || 22 }}
           script: |
             echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.ACR_REGISTRY }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
-            mkdir -p /opt/space-index
-            cat > /opt/space-index/docker-compose.yml << 'COMPOSE'
+            sudo mkdir -p ${{ secrets.DEPLOY_PATH }}
+            cat > ${{ secrets.DEPLOY_PATH }}/docker-compose.yml << 'COMPOSE'
             services:
               space-index:
                 image: ${IMAGE:?IMAGE environment variable is required}
@@ -75,7 +75,7 @@ jobs:
                   - "80:80"
                 restart: unless-stopped
             COMPOSE
-            cd /opt/space-index
+            cd ${{ secrets.DEPLOY_PATH }}
             export IMAGE=${{ secrets.ACR_REGISTRY }}/${{ secrets.ACR_NAMESPACE }}/space-index:${{ needs.build-and-push.outputs.image_tag }}
             docker compose pull
             docker compose up -d
