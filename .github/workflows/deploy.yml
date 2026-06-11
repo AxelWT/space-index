@@ -80,4 +80,4 @@ jobs:
             docker compose pull
             docker compose up -d
             sleep 5
-            docker compose ps --format json | grep -q '"Running"' || { docker compose logs --tail=20; exit 1; }
+            docker compose ps --format json | grep -qi '"running"' || { docker compose logs --tail=20; exit 1; }
