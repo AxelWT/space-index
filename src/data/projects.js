@@ -16,5 +16,11 @@ export const projects = [
     description: 'AI 简历优化和面试建议',
     url: 'https://resume-gpt.axello.cn',
     icon: '🎨'
+  },
+    {
+    name: 'Nginx Proxy Manager',
+    description: '路由网关',
+    url: 'https://npm.axello.cn',
+    icon: '🔀'
   }
 ]
