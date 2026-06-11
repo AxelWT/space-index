@@ -72,7 +72,7 @@ jobs:
                 image: ${IMAGE:?IMAGE environment variable is required}
                 container_name: space-index
                 ports:
-                  - "80:80"
+                  - "8002:8002"
                 restart: unless-stopped
             COMPOSE
             cd ${{ secrets.DEPLOY_PATH }}
