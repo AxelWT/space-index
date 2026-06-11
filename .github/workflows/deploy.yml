@@ -66,7 +66,7 @@ jobs:
           script: |
             echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.ACR_REGISTRY }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
             sudo mkdir -p ${{ secrets.DEPLOY_PATH }}
-            cat > ${{ secrets.DEPLOY_PATH }}/docker-compose.yml << 'COMPOSE'
+            sudo tee ${{ secrets.DEPLOY_PATH }}/docker-compose.yml > /dev/null << 'COMPOSE'
             services:
               space-index:
                 image: ${IMAGE:?IMAGE environment variable is required}
