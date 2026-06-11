@@ -349,7 +349,7 @@ function scrollToTop() {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -359,8 +359,9 @@ function scrollToTop() {
   border-radius: 20px;
   padding: 2rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -385,7 +386,6 @@ function scrollToTop() {
   background: var(--bg-tertiary);
   border-radius: 12px;
   font-size: 1.5rem;
-  margin-bottom: 0.25rem;
 }
 
 .project-title {
@@ -400,6 +400,7 @@ function scrollToTop() {
   font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.6;
+  margin: 0;
 }
 
 /* Footer */
@@ -416,12 +417,6 @@ function scrollToTop() {
 }
 
 /* 响应式布局 */
-@media (max-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
   .nav {
     padding: 1rem 1.5rem;
@@ -439,8 +434,5 @@ function scrollToTop() {
     padding: 2rem 1.5rem 4rem;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
 </style>
