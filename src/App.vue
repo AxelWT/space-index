@@ -349,7 +349,7 @@ function scrollToTop() {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -434,5 +434,8 @@ function scrollToTop() {
     padding: 2rem 1.5rem 4rem;
   }
 
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
