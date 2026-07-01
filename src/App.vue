@@ -36,7 +36,7 @@
       <p class="hero-tagline fade-in">欢迎访问我的项目集合，探索创意与技术的交汇</p>
       <div class="hero-actions fade-in">
         <a href="#projects" class="btn btn-primary">浏览项目</a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+        <a href="https://github.com/AxelWT" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
       </div>
     </section>
 
@@ -349,7 +349,7 @@ function scrollToTop() {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -434,5 +434,8 @@ function scrollToTop() {
     padding: 2rem 1.5rem 4rem;
   }
 
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
