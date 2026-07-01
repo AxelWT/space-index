@@ -18,7 +18,7 @@ export const projects = [
         icon: '🎨'
     },
     {
-        name: 'Insight-Hub',
+        name: 'Insight Hub',
         description: '调研平台',
         url: 'https://insight.axello.cn',
         icon: '🔍'
