@@ -6,6 +6,12 @@ export const projects = [
         icon: '✈️'
     },
     {
+        name: 'Trading Agents',
+        description: '投资分析',
+        url: 'https://trading.axello.cn',
+        icon: '📈'
+    },
+    {
         name: 'Dream Decoder',
         description: 'AI 解梦',
         url: 'https://dream.axello.cn',
