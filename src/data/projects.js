@@ -12,6 +12,12 @@ export const projects = [
         icon: '📈'
     },
     {
+        name: 'Deer flow',
+        description: 'AI Agent',
+        url: 'https://deerflow.axello.cn',
+        icon: '🦌'
+    },
+    {
         name: 'Dream Decoder',
         description: 'AI 解梦',
         url: 'https://dream.axello.cn',
