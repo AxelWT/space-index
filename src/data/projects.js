@@ -42,6 +42,12 @@ export const projects = [
         icon: '🔍'
     },
     {
+        name: '1Panel',
+        description: '服务器面板',
+        url: 'https://1panel.axello.cn/tencentcloud',
+        icon: '📊'
+    },
+    {
         name: 'Nginx Proxy Manager',
         description: '路由网关',
         url: 'https://npm.axello.cn',
