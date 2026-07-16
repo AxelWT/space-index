@@ -42,6 +42,12 @@ export const projects = [
         icon: '🔍'
     },
     {
+        name: 'Face fusion',
+        description: 'Deepfake',
+        url: 'https://mfacefusion.axello.cn',
+        icon: '🤡'
+    },
+    {
         name: '1Panel',
         description: '服务器面板',
         url: 'https://1panel.axello.cn/tencentcloud',
