@@ -31,7 +31,7 @@ export const projects = [
     },
     {
         name: 'Resume GPT',
-        description: 'AI 简历优化和面试建议',
+        description: '优化简历',
         url: 'https://resume-gpt.axello.cn',
         icon: '🎨'
     },
