@@ -20,7 +20,7 @@ export const projects = [
     {
         name: 'Deer flow',
         description: 'AI Agent',
-        url: 'https://mdeerflow.axello.cn',
+        url: 'https://mfrpdeerflow.axello.cn',
         icon: '🦌'
     },
     {
