@@ -48,6 +48,12 @@ export const projects = [
         icon: '🤡'
     },
     {
+        name: 'Pi Web',
+        description: 'Remote Coding Entrance',
+        url: 'https://mpiweb.axello.cn',
+        icon: 'π'
+    },
+    {
         name: '1Panel',
         description: '服务器面板',
         url: 'https://1panel.axello.cn/tencentcloud',
