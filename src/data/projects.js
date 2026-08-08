@@ -51,7 +51,7 @@ export const projects = [
         name: 'Pi Web',
         description: 'Remote Coding Entrance',
         url: 'https://mpiweb.axello.cn',
-        icon: 'π'
+        icon: '💭'
     },
     {
         name: '1Panel',
