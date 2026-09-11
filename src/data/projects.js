@@ -54,6 +54,12 @@ export const projects = [
         icon: '💭'
     },
     {
+        name: 'DeepSeek Harness',
+        description: 'Remote Agent Harness',
+        url: 'https://mdsh.axello.cn',
+        icon: '🐳'
+    },
+    {
         name: '1Panel',
         description: '服务器面板',
         url: 'https://1panel.axello.cn/tencentcloud',
