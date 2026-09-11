@@ -19,7 +19,7 @@ jobs:
       image_tag: ${{ steps.tags.outputs.sha7 }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -49,6 +49,7 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.tags.outputs.tags }}
+          provenance: false
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
