@@ -70,5 +70,11 @@ export const projects = [
         description: '路由网关',
         url: 'https://npm.axello.cn',
         icon: '🔀'
-    }
+    },
+    {
+        name: 'Flight Space',
+        description: ' 飞行空间',
+        url: 'https://axelwt.github.io/flight-space/',
+        icon: '🈳'
+    },
 ]
