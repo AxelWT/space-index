@@ -161,8 +161,10 @@ vec3 skyColor(vec3 rd, vec3 sunDir) {
   vec3 col = mix(hor, zen, smoothstep(0.0, 0.55, y));
   float s = max(dot(rd, sunDir), 0.0);
   vec3 sunC = mix(vec3(1.00, 0.96, 0.88), vec3(0.72, 0.78, 0.86), uNight);
-  col += sunC * pow(s, 18.0) * 0.25;
-  col += sunC * pow(s, 280.0) * 1.1;
+  float haloI = mix(0.16, 0.22, uNight);  // 昼间霾光更收敛，夜间保持
+  float discI = mix(0.30, 0.62, uNight);  // 昼间日面明显压暗成柔白，夜间月面不变
+  col += sunC * pow(s, 18.0) * haloI;
+  col += sunC * pow(s, 320.0) * discI;
   return col;
 }
 
@@ -223,7 +225,7 @@ void main() {
       col = mix(mix(deep, shallow, crest), refl, fres);
 
       float spec = pow(max(dot(reflect(rd, n), sunDir), 0.0), 240.0);
-      col += mix(vec3(1.00, 0.95, 0.85), vec3(0.75, 0.82, 0.92), uNight) * spec * 1.2;
+      col += mix(vec3(1.00, 0.95, 0.85), vec3(0.75, 0.82, 0.92), uNight) * spec * 1.0;
 
       vec3 fogC = skyColor(normalize(vec3(rd.x, 0.02, rd.z)), sunDir);
       float fog = 1.0 - exp(-hitT * 0.035);
