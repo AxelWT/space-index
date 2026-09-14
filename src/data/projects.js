@@ -6,6 +6,12 @@ export const projects = [
         icon: '✈️'
     },
     {
+        name: 'Flight Albums',
+        description: '摄影作品',
+        url: 'https://albums.axello.cn',
+        icon: '🌸'
+    },
+    {
         name: 'NAS',
         description: '我的 NAS',
         url: 'https://msftpgo.axello.cn',
